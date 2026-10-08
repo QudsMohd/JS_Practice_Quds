@@ -12,3 +12,19 @@
 //   Total: 1650 baisa = 1.65 OMR
 
 // your code here
+let shawarma=600;
+let shawarma_quantity=2;
+
+let karak=150;
+let karak_quantity=3;
+
+let totalShawarma= shawarma* shawarma_quantity;
+let totalKarak= karak* karak_quantity;
+
+let totalBaisa= totalKarak+ totalShawarma;
+let totalRiyal= totalBaisa/1000;
+
+console.log(`Shawarma: ${shawarma_quantity} x ${shawarma} = ${totalShawarma} baisa`);
+console.log(`Karak: ${karak_quantity} x ${karak} = ${totalKarak} baisa`);
+console.log(`Total: ${totalBaisa} baisa = ${totalRiyal} OMR`);
+

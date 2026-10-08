@@ -21,3 +21,27 @@ const order = [
 ];
 
 // your code here
+let subtotal=0;
+
+for (let i =0; i< order.length; i++){
+  let line=order[i].price* order[i].quantity;
+  console.log(`${order[i].name} x ${order[i].quantity} = ${line} baisa`);
+  subtotal=subtotal+line;
+}
+console.log(`Subtotal: ${subtotal} baisa`);
+
+let discount; 
+
+if(subtotal>=5000){
+  discount=subtotal*0.10;
+
+}else{
+  discount=0;
+}
+
+let total=subtotal-discount;
+
+console.log(`Discount: ${discount} baisa`);
+console.log(`Total: ${total} baisa`);
+
+

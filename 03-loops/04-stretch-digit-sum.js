@@ -11,3 +11,10 @@
 //   Digit sum of 2026 = 10
 
 // your code here
+let number = 2026;
+let sum=0;
+while(number> 0){
+    sum=sum+(number%10);
+    number=Math.floor(number/ 10);
+}
+console.log(`Digit sum of 2026 = ${sum}`);
